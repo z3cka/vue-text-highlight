@@ -79,7 +79,7 @@ export default {
   },
   computed: {
     queries() {
-      return this.split ? this.search.split(/\s+/) : [this.search];
+      return ['birds scattered', 'Tropical birds']; // demo of "...it will highlight the union of matched strings/regex globally."
     },
     filteredQueries() {
       return this.queries.filter(query => query);
